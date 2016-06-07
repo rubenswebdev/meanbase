@@ -1,0 +1,36 @@
+{
+  "name": "web",
+  "authors": [
+    "Rubens Fernandes <rubensdrk@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "AngularJS-Toaster": "angularjs-toaster#~0.4.15",
+    "angular-input-masks": "~2.1.0",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap-material-design": "~0.3.0",
+    "bootstrap": "~3.3.5",
+    "moment": "~2.10.6",
+    "ng-file-upload": "~7.3.8",
+    "underscore": "~1.8.3",
+    "dropdown.js": "*",
+    "angular-bootstrap": "~0.14.3",
+    "angular-br-filters": "~0.5.0",
+    "pdfmake": "~0.1.20",
+    "ngmap": "~1.15.1",
+    "file-saver.js": "~1.20150507.2",
+    "angular-sanitize": "~1.4.8",
+    "angular-bootstrap-lightbox": "~0.10.0",
+    "angular-morris-chart": "~1.1.0",
+    "morris.js": "morrisjs#~0.5.1",
+    "raphael": "~2.1.4"
+  },
+  "resolutions": {
+    "angular": "1.4.8"
+  }
+}

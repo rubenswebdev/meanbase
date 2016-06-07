@@ -1,0 +1,41 @@
+<div class="panel panel-default"><!-- Painel Principal -->
+        <div class="panel-heading">Usuário</div>
+        <div class="panel-body"><!-- Painel Body -->
+                <form class="form" ng-submit="vm.save()"><!-- Inicio Form -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                        <label for="cadDesUnidade">Login</label>
+                        <input  ng-model="vm.form.login"  type="text" class="form-control">
+                    </div>
+                    <div ng-show="vm.form._id" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="alert alert-info">Para nao alterar a senha deixe os campos abaixo em branco.</div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
+                        <label for="cadDesUnidade">Senha</label>
+                        <input  ng-model="vm.form.password"  type="password" class="form-control">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
+                        <label for="cadDesUnidade">Confirma senha</label>
+                        <input  ng-model="vm.form.password2"  type="password" class="form-control">
+                    </div>
+                    <div ng-show="(vm.form.password2 && vm.form.password2 != '') && (vm.form.password != vm.form.password2)" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="alert alert-danger">Senhas nao conferem</div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
+                        <label for="cadDesUnidade">Nome</label>
+                        <input  ng-model="vm.form.nome"  type="text" class="form-control">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
+                        <label for="cadDesUnidade">E-mail</label>
+                        <input  ng-model="vm.form.email"  type="text" class="form-control">
+                    </div>
+                    <!--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-group">
+                        <label for="cadDesUnidade">Foto:</label>
+                       <input ngf-select="" ng-model="vm.form.foto" type="file" multiple id="fotos" class="form-control">
+                    </div>-->
+
+                    <a  ui-sref="usuario" class="btn btn-danger">Voltar</a>
+                    <button type="submit" class="btn btn-success">Salvar</button>
+
+                </form><!-- End Form -->
+        </div><!-- End Painel Body -->
+</div>
