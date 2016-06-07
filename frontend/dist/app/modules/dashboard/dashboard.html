@@ -1,0 +1,57 @@
+<div ui-view>
+    <ul class="breadcrumb" style="margin-bottom: 5px;">
+      <li><a ui-sref="dashboard">Início</a></li>
+      <li class="active">Sigma</li>
+    </ul> <br>
+    <div class="page page-profile ng-scope">
+      <header class="profile-header">
+
+          <div class="profile-info">
+            <span>Dashboard Sigma</span>
+          </div>
+      </header>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 well space-right">
+            <h2 class="text-center text-primary">{{vm.lista.cliente}}</h2>
+            <p class="text-center text-muted"></p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 well space-right">
+            <h2 class="text-center text-success">{{vm.lista.prospecto}}</h2>
+            <p class="text-center text-muted"></p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 well space-right">
+            <h2 class="text-center text-info">{{vm.lista.produtoAcabado}}</h2>
+            <p class="text-center text-muted"></p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 well space-right">
+            <h2 class="text-center text-warning">{{vm.lista.contratoAtivo}}</h2>
+            <p class="text-center text-muted"></p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 well">
+            <h2 class="text-center text-muted">{{vm.lista.propostas}}</h2>
+            <p class="text-center text-muted"></p>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 well">
+            <h2 class="text-center text-danger">{{vm.lista.vendas}}</h2>
+            <p class="text-center text-muted"></p>
+        </div>
+      </div>
+
+     <!-- <div class="row">
+        <div class="col-md-3">
+            <div
+            donut-chart= ""
+            donut-data='vm.dados'
+            donut-colors='["#c7254e","#31C0BE", "#FF9800"]'>
+            </div>
+        </div>
+      </div>-->
+    </div>
+</div>

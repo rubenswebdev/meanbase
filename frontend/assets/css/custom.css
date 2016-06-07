@@ -1,0 +1,346 @@
+body{
+    padding-top: 80px;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.progress {
+    height: 20px;
+}
+
+.checkbox {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.table-heading {
+    background: #337ab7;
+    color: #fff;
+}
+
+.table-subheading {
+    background: #ededed;
+    width: 80%;
+}
+
+.table-footer {
+    background: #ccc;
+    font-color: #fff;
+}
+
+.pype{
+	margin-left:10px;
+	margin-right:5px;
+}
+
+.trClick td:hover {
+    cursor: pointer;
+}
+
+.modal-open {
+    overflow: inherit;
+}
+
+.nav-tabs li.active{
+    border-bottom: 3px solid #CCDC39;
+    background: #08ad9c;
+}
+
+.dropdown-menu .btn.btn-sm {
+padding: 0px 9px;
+}
+.cursor-point{
+    cursor:pointer;
+}
+
+/* Loading */
+#loading {
+    /* background: #f4f4f2 scroll 0 0; */
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999999;
+}
+
+#loading h3 {
+    position: relative;
+    top: 94px;
+    left: -55px;
+}
+
+.bokeh {
+    border: 0.01em solid rgba(150, 150, 150, 0.1);
+    border-radius: 50%;
+    font-size: 100px;
+    height: 1em;
+    list-style: outside none none;
+    margin: 0 auto;
+    position: relative;
+    top: 35%;
+    width: 1em;
+    z-index: 2147483647;
+}
+.bokeh li {
+    border-radius: 50%;
+    height: 0.2em;
+    position: absolute;
+    width: 0.2em;
+}
+.bokeh li:nth-child(1) {
+    animation: 1.13s linear 0s normal none infinite running rota, 3.67s ease-in-out 0s alternate none infinite running opa;
+    background: #00c176 none repeat scroll 0 0;
+    left: 50%;
+    margin: 0 0 0 -0.1em;
+    top: 0;
+    transform-origin: 50% 250% 0;
+}
+.bokeh li:nth-child(2) {
+    animation: 1.86s linear 0s normal none infinite running rota, 4.29s ease-in-out 0s alternate none infinite running opa;
+    background: #ff003c none repeat scroll 0 0;
+    margin: -0.1em 0 0;
+    right: 0;
+    top: 50%;
+    transform-origin: -150% 50% 0;
+}
+.bokeh li:nth-child(3) {
+    animation: 1.45s linear 0s normal none infinite running rota, 5.12s ease-in-out 0s alternate none infinite running opa;
+    background: #fabe28 none repeat scroll 0 0;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0 -0.1em;
+    transform-origin: 50% -150% 0;
+}
+.bokeh li:nth-child(4) {
+    animation: 1.72s linear 0s normal none infinite running rota, 5.25s ease-in-out 0s alternate none infinite running opa;
+    background: #88c100 none repeat scroll 0 0;
+    margin: -0.1em 0 0;
+    top: 50%;
+    transform-origin: 250% 50% 0;
+}
+@keyframes opa {
+12% {
+    opacity: 0.8;
+}
+19.5% {
+    opacity: 0.88;
+}
+37.2% {
+    opacity: 0.64;
+}
+40.5% {
+    opacity: 0.52;
+}
+52.7% {
+    opacity: 0.69;
+}
+60.2% {
+    opacity: 0.6;
+}
+66.6% {
+    opacity: 0.52;
+}
+70% {
+    opacity: 0.63;
+}
+79.9% {
+    opacity: 0.6;
+}
+84.2% {
+    opacity: 0.75;
+}
+91% {
+    opacity: 0.87;
+}
+}
+
+@keyframes rota {
+100% {
+    transform: rotate(360deg);
+}
+}
+
+}
+/* // Loading */
+
+
+/* Page Profile */
+.page-profile {
+    margin: -15px 0 0;
+}
+.page {
+    padding: 15px 30px;
+}
+
+.page-profile .profile-header {
+    position: relative;
+    margin: 0 -30px 15px;
+    padding: 50px 30px 90px;
+    background: url("/assets/img/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+
+.page-profile .profile-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    line-height: 20px;
+    padding: 10px 30px;
+    color: #fafafa;
+}
+
+.mini-box {
+    min-height: 120px;
+    padding: 25px;
+}
+
+.mini-box.bg-success {
+    background: #009688;
+    color: #fff;
+}
+
+.mini-box.bg-danger {
+    background: #F44336;
+    color: #fff;
+}
+
+.mini-box .box-info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mini-box a{
+    color: #fff !important;
+}
+
+.mini-box .btn-icon, .mini-box .btn-icon-lined {
+    margin: 0 15px 0 0;
+    font-size: 48px !important;
+}
+
+.btn-icon {
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+}
+
+.btn-icon-sm {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #586980;
+    border-color: #586980;
+}
+
+.btn-icon-sm:hover {
+    color: #fafafa;
+}
+
+.btn-icon-lg-alt i {
+    line-height: 70px;
+}
+
+
+.ih-item.ih-material {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ih-item {
+    position: relative;
+    border-radius: 2px;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.ih-item img {
+    border-radius: 2px;
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.ih-item.ih-material .info-mask {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: 0;
+    right: 0;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ih-item.ih-material .info-content {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.ih-item.ih-material .info-content .info-inner {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.space-right{
+    margin-right: 50px;
+}
+
+.space-link{
+    margin-bottom: 20px;
+}
+.tagSpace{
+    margin-left: 2px;
+}
+
+.tag {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.tag:hover {
+    color: rgba(255, 255, 255, 1);
+}

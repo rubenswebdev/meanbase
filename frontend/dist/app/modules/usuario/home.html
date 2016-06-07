@@ -1,0 +1,78 @@
+<div ui-view>
+
+                <ul class="breadcrumb" style="margin-bottom: 5px;">
+                  <li><a ui-sref="dashboard">Início</a></li>
+                  <li><a ui-sref="cadastro">Cadastro</a></li>
+                  <li class="active">Usuários</li>
+                </ul> <br>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Usuário:</div>
+                    <div class="panel-body">
+                        <div class="control-group">
+                            <a ui-sref="usuario.add" class="btn btn-success">Novo usuário</a>
+                            <button ng-click="vm.excluir()" ng-disabled="vm.nothingSelected()" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span>Excluir</button>
+                        </div>
+
+                        <div class="control-group">
+                            <form class="form-inline pull-right" ng-submit="vm.filtrar()">
+                              <div class="form-group">
+                                <input ng-change="vm.reset()" ng-model="vm.filtro" type="text" class="form-control" placeholder="buscar">
+                              </div>
+                              <button type="submit" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-search"></span></button>
+                            </form>
+                        </div>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="checkbox">
+                                          <label>
+                                            <input ng-click="vm.selectAll()" ng-model="vm.selector" type="checkbox"><span class="checkbox-material"><span class="check"></span></span>
+                                          </label>
+                                        </div>
+                                    </th>
+                                    <th>login</th>
+                                    <th>nome</th>
+                                    <th>email</th>
+                                    <th>Opções</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in vm.lista">
+                                    <td>
+                                       <div class="checkbox">
+                                         <label>
+                                           <input type="checkbox" ng-model="vm.lista[$index].selecionado">
+                                            <span class="checkbox-material">
+                                                <span class="check"></span>
+                                            </span>
+                                         </label>
+                                       </div>
+                                    </td>
+                                    <td>{{item.login}}</td>
+                                    <td>{{item.nome}}</td>
+                                    <td>{{item.email}}</td>
+                                    <td>
+                                       <a href="/#/usuario/edit/{{item._id}}">editar</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <uib-pagination
+                          ng-model="vm.pagination.currentPage"
+                          total-items="vm.pagination.total"
+                          items-per-page="vm.pagination.itemsPerPage"
+                          max-size="5"
+                          boundary-links="true"
+                          previous-text="<"
+                          next-text=">"
+                          first-text="primeira"
+                          last-text="ultima"
+                          >
+                        </uib-pagination>
+                    </div>
+                </div>
+</div>

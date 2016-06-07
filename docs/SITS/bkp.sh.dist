@@ -1,0 +1,2 @@
+#!/bin/bash
+mv -f $PWD/../frontend/uploads/nfse/enviar/*.xml $PWD/../frontend/uploads/nfse/enviar_bkp/

@@ -1,0 +1,16 @@
+module.exports = {
+    secret: 'm4tr1x123erpwebsixW6WinsBetterThenEver',
+    database: 'mongodb://127.0.0.1:27017/grancontainer',
+    uploadPath: '/home/rubens/projetos/grancontainer/frontend/uploads/',
+    sitsPath: '/home/rubens/projetos/grancontainer/docs/SITS/',
+    port: 8383,
+    fromName: 'Rubens',
+    fromEmail: 'rubens@websix.com.br',
+    emailPort: 587,
+    emailPassword: 'm4tr1x123',
+    emailServer: 'mail.websix.com.br',
+    wspass: 'YFY28RKF',
+    homologacao: true,
+    nfeApi: 'http://w6nfe.dev',
+    tpAmb: 2,
+};
