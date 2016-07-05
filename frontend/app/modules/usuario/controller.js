@@ -82,21 +82,21 @@ function UsuarioController(ApiService, $state, $stateParams, $scope, $filter, to
 
             ApiService.put(apiRoute, vm.form).then(function (data) {
                 if (data.success) {
-                 toaster.pop('success', 'Mensagem', 'Editado com sucesso!');
-                                $state.go(stateDefault, {}, { reload: true, inherit: false });
-                            } else {
-                 toaster.pop('error', 'Mensagem', 'Ocorreu um erro, tente novamente!');
-                            }
+                    toaster.pop('success', 'Mensagem', 'Editado com sucesso!');
+                    $state.go(stateDefault, {}, { reload: true, inherit: false });
+                } else {
+                    toaster.pop('error', 'Mensagem', 'Ocorreu um erro, tente novamente!');
+                }
             });
         } else {
             ApiService.post(apiRoute, vm.form).then(function (data) {
                 console.log(data);
                 if (data.success) {
-                 toaster.pop('success', 'Mensagem', 'Salvo com sucesso!');
-                                $state.go(stateDefault, {}, { reload: true, inherit: false });
-                            } else {
-                 toaster.pop('error', 'Mensagem', 'Ocorreu um erro, tente novamente!');
-                            }
+                    toaster.pop('success', 'Mensagem', 'Salvo com sucesso!');
+                    $state.go(stateDefault, {}, { reload: true, inherit: false });
+                } else {
+                    toaster.pop('error', 'Mensagem', 'Ocorreu um erro, tente novamente!');
+                }
             });
         }
     }
@@ -111,9 +111,9 @@ function UsuarioController(ApiService, $state, $stateParams, $scope, $filter, to
         for (var i = vm.lista.length - 1; i >= 0; i--) {
             if (vm.lista[i].selecionado) {
                 ApiService.del(apiRoute + vm.lista[i]._id).then(function (data) {
-                 if (data.ok) {
-                  toaster.pop('success', 'Mensagem', 'Excluido com sucesso!');
-                             }
+                    if (data.ok) {
+                        toaster.pop('success', 'Mensagem', 'Excluido com sucesso!');
+                    }
                 });
             }
         };

@@ -5,11 +5,10 @@ var rotas = express.Router();
 var controller = require('./controller');
 
 var multipart = require('connect-multiparty');
-var multipartMiddleware = multipart({"uploadDir":config.uploadPath+'logo'});
+var multipartMiddleware = multipart({ uploadDir: config.uploadPath + 'logo' });
 
 /*Rotas*/
 /*get all*/
-rotas.get('/getCfop', controller.cfop);
 rotas.get('/', controller.index);
 
 /*save one*/
