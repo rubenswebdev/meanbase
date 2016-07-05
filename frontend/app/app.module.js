@@ -4,7 +4,7 @@
 /**
    * Config for the router
    */
-angular.module('erp', [
+angular.module('app', [
     'ui.router',
     'ui.bootstrap',
     'ngSanitize',
@@ -19,25 +19,18 @@ angular.module('erp', [
     'dashboard',
     'usuario',
     'config',
-    ])
-
-  .filter('nl2br', ['$sanitize', function ($sanitize) {
-    var tag = (/xhtml/i).test(document.doctype) ? '<br />' : '<br>';
-    return function (msg) {
-        msg = (msg + '').replace(/(\r\n|\n\r|\r|\n|&#10;&#13;|&#13;&#10;|&#10;|&#13;)/g, tag + '$1');
-        return $sanitize(msg);
-    };
-},
 ])
 
-  .config(['LightboxProvider', function (LightboxProvider) {
-    LightboxProvider.getImageUrl = function (image) {
-            return '/uploads/' + image;
+.filter('nl2br', ['$sanitize', function ($sanitize) {
+        var tag = (/xhtml/i).test(document.doctype) ? '<br />' : '<br>';
+        return function (msg) {
+            msg = (msg + '').replace(/(\r\n|\n\r|\r|\n|&#10;&#13;|&#13;&#10;|&#10;|&#13;)/g, tag + '$1');
+            return $sanitize(msg);
         };
-},
+    },
 ])
 
-  .config(configuration);
+.config(configuration);
 
 configuration.$inject = ['$urlRouterProvider'];
 
@@ -45,7 +38,7 @@ function configuration($urlRouterProvider) {
     $urlRouterProvider.otherwise('/dashboard');
 }
 
-angular.module('erp').factory('authInterceptor', authInterceptor);
+angular.module('app').factory('authInterceptor', authInterceptor);
 
 authInterceptor.$inject = ['$rootScope', '$q', '$window', '$location'];
 function authInterceptor($rootScope, $q, $window, $location) {
@@ -73,7 +66,7 @@ function authInterceptor($rootScope, $q, $window, $location) {
 }
 
 /*Injeta Autenticação*/
-angular.module('erp').config(injectAuth);
+angular.module('app').config(injectAuth);
 
 injectAuth.$inject = ['$httpProvider'];
 
@@ -82,7 +75,7 @@ function injectAuth($httpProvider) {
 }
 
 /*Set de token a cada request*/
-angular.module('erp').run(setToken);
+angular.module('app').run(setToken);
 
 setToken.$inject = ['$rootScope', 'JwtService', '$location', '$state'];
 
@@ -101,7 +94,7 @@ function setToken($rootScope, JwtService, $location, $state) {
     });
 }
 
-angular.module('erp').run(validateFilter);
+angular.module('app').run(validateFilter);
 
 validateFilter.$inject = ['$window'];
 

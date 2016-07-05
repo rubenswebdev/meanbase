@@ -1,5 +1,7 @@
 {
     "preset": "airbnb",
     "validateIndentation": 4,
-    "maximumLineLength": 200
+    "maximumLineLength": 200,
+    "safeContextKeyword": ["vm", "user", "_this"],
+    "requireCamelCaseOrUpperCaseIdentifiers": {"allExcept": ["jwt_decode"]}
 }

@@ -28,7 +28,6 @@ app.use('/v1', jwt);
 
 /*Modulos*/
 jwt.use('/usuario', require('./app/usuario'));
-jwt.use('/dashboard', require('./app/dashboard'));
 jwt.use('/config', require('./app/config'));
 
 server.listen(config.port, '127.0.0.1');
