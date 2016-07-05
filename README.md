@@ -115,3 +115,7 @@ Server start: 4040
 * pelo navegador acesse: projeto.dev/api/fixture/usuario/senha_para_fixture
 
 > **senha_para_fixture** é configurada no arquivo de config.js do backend
+
+---
+
+:airplane: Pronto agora você pode acessar a url do projeto e logar com o usuário: **admin** e a senha: **admin** :airplane:
