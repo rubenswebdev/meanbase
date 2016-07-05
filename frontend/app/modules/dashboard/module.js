@@ -11,7 +11,7 @@ function states($stateProvider, LoadingProvider) {
             url: '/dashboard',
             views: {
                 '': {
-                    templateUrl: LoadingProvider.uncache('app/modules/dashboard/dashboard.html'),
+                    templateUrl: LoadingProvider.uncache('app/modules/dashboard/home.html'),
                     controller: 'DashboardController',
                     controllerAs: 'vm',
                 },

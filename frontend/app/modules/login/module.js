@@ -11,7 +11,7 @@ function states($stateProvider, LoadingProvider) {
             url: '/login',
             views: {
                 '': {
-                    templateUrl: LoadingProvider.uncache('app/modules/login/login.html'),
+                    templateUrl: LoadingProvider.uncache('app/modules/login/home.html'),
                     controller: 'LoginController',
                     controllerAs: 'vm',
                 },
