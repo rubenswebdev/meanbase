@@ -1,13 +1,13 @@
-(function(){
-	"use strict";
+(function () {
+    'use strict';
 
-	angular.module('erp')
-		.constant("myConfig", {
-            "api": "http://grancontainer.dev/api"
+    angular.module('app')
+        .constant('myConfig', {
+            api: 'http://projeto.dev/api',
         });
 
-	angular.module('core')
-		.constant('coreConfig', {
-			cache: true
-		});
+    angular.module('core')
+        .constant('coreConfig', {
+            cache: true,
+        });
 })();
