@@ -1,5 +1,15 @@
 ### Estrutura básica para criar um sistema com MEAN modular, login já incluído.
 
+---
+### Requer devidamente instalado
+
+* Apache2
+    * sudo apt-get install libapache2-mod-proxy-html libxml2-dev
+* MongoDB
+* NodeJS
+
+---
+
 * na pasta **docs** contém o template padrão para criar o vhost no apache usando o [vhost-manager](https://github.com/rubensfernandes/vhost-manager)
 
 ```javascript
