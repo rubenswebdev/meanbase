@@ -129,3 +129,7 @@ Server start: 4040
 ---
 
 :airplane: Pronto agora você pode acessar a url do projeto e logar com o usuário: **admin** e a senha: **admin** :airplane:
+
+## License
+
+[MIT License](http://rubensfernandes.mit-license.org/) © Rubens Fernandes
